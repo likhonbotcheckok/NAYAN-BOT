@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "bot",
     version: "1.0.0",
-    aliases: ["mim"],
+    aliases: ["Ayesha"],
     permission: 0,
     credits: "nayan",
     description: "talk with bot",
@@ -75,7 +75,7 @@ module.exports = {
         const name = await Users.getNameUser(events.senderID);
         const rand = greetings[Math.floor(Math.random() * greetings.length)];
         return nayan.reply({
-          body: `${name}, ${rand}`,
+          body: `╭────────────❍\n╰➤ 👤 𝐃𝐞𝐚𝐫『${name}』,\n╰➤ 🗣️  ${rand}`\n╰─────────────────➤,
           mentions: [{ tag: name, id: events.senderID }]
         }, events.threadID, (error, info) => {
           if (error) {
